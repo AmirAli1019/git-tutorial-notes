@@ -23,6 +23,7 @@ git commit --amend ==> Replaces the latest commit by creating a new commit.
 git status ==> shows the status of the repository.
 
 git show "<commit hash>" ==> shows the commit changes details.
+git show "<commit_hash>":"<file_name>" ==> Prints the content of the file during the specified commit.
 
 git log ==> Shows the log of the repository.
 git log -p ==> Displays the changes (diffings) alongside the commits.
@@ -37,7 +38,9 @@ git rm "<file_name>" ==> Removes a file from the repository and stages the chang
 git mv "<file_name>" ==> Moves a file in the repository and stages the change automatically (ready to commit).
 
 git restore "<file>" ==> Discards specified file changes in working directory based on the latest commit.
-git checkout "<file>" ==> Similar to `git restore "<file>"`
 git restore --staged "<file>" ==> Unstages the file or directory.
+git restore --source="<commit hash>" "<file_name>" ==> Replaces the file with an older version from the specified commit.
+
+git checkout "<file>" ==> Similar to `git restore "<file>"`
 
 git revert "<commit hash>" ==> Reverts a specified commit to the working directory. (You can use `HEAD` instead of the last commit hash).
