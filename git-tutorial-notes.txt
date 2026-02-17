@@ -1,0 +1,34 @@
+diff file_1 file_2 ==> Shows the difference between two files
+diff file_1 file_2 -u ==> Displays the difference between two files in a way that is easier to read for both humans and computers.
+diff file_1 file_2 > a.patch ==> Saves the difference in a patch file.
+
+patch file_1 < a.patch ==> Patches the older file based on the generated patch file, After patching file_1 and file_2 will be identical.
+
+git config user.name "<Your Name>"
+git config user.email "<Your Email>"
+git config core.editor "<Your Desired Editor>" ==> Changes the default text editor for git.
+For the above commands add --global to apply changes globally for all further repositories.
+
+git init ==> To initialize a new repository.
+
+git add file_1 file_2 ... (or some directories) => To stage changed files.
+git add -A ==> To stage everything that can be staged in the current repository.
+git add -p ==> Stages changes in an interactive way.
+
+git commit ==> To commit changes
+git commit -a ==> To auto stage all `tracked` files and then commit them. (No `git add` needed).
+git commit -m "<commit message>" -m ...
+
+git status ==> shows the status of the repository.
+
+git show "<commit hash>" ==> shows the commit changes details.
+
+git log ==> Shows the log of the repository.
+
+git diff ==> Displays the difference between the latest commit and current `unstaged` repository files.
+git diff --staged ==> Displays the differences between the latest commit and current `staged` repository files.
+git diff "<commit hash>" ==> Displays the differences between the specified commit and current `staged` or `unstaged` repository files.
+git diff "<commit hash1>" "<commit hash2>" ==> Displays the differences between two specified commit.
+
+git rm "<file_name>" ==> Removes a file from the repository and stages the change automatically (ready to commit).
+git mv "<file_name>" ==> Moves a file in the repository and stages the change automatically (ready to commit).
