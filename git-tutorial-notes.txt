@@ -25,6 +25,8 @@ git status ==> shows the status of the repository.
 git show "<commit hash>" ==> shows the commit changes details.
 
 git log ==> Shows the log of the repository.
+git log -p ==> Displays the changes (diffings) alongside the commits.
+git log -3 ==> Displays just the last 3 commits.
 
 git diff ==> Displays the difference between the latest commit and current `unstaged` repository files.
 git diff --staged ==> Displays the differences between the latest commit and current `staged` repository files.
@@ -34,6 +36,8 @@ git diff "<commit hash1>" "<commit hash2>" ==> Displays the differences between 
 git rm "<file_name>" ==> Removes a file from the repository and stages the change automatically (ready to commit).
 git mv "<file_name>" ==> Moves a file in the repository and stages the change automatically (ready to commit).
 
-git restore "<file>" ==> Removes specified file changes in working directory based on the latest commit.
+git restore "<file>" ==> Discards specified file changes in working directory based on the latest commit.
 git checkout "<file>" ==> Similar to `git restore "<file>"`
 git restore --staged "<file>" ==> Unstages the file or directory.
+
+git revert "<commit hash>" ==> Reverts a specified commit to the working directory. (You can use `HEAD` instead of the last commit hash).
