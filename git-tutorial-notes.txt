@@ -32,3 +32,7 @@ git diff "<commit hash1>" "<commit hash2>" ==> Displays the differences between 
 
 git rm "<file_name>" ==> Removes a file from the repository and stages the change automatically (ready to commit).
 git mv "<file_name>" ==> Moves a file in the repository and stages the change automatically (ready to commit).
+
+git restore "<file>" ==> Removes specified file changes in working directory based on the latest commit.
+git checkout "<file>" ==> Similar to `git restore "<file>"`
+git restore --staged "<file>" ==> Unstages the file or directory.
