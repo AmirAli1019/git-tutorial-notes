@@ -18,6 +18,7 @@ git add -p ==> Stages changes in an interactive way.
 git commit ==> To commit changes
 git commit -a ==> To auto stage all `tracked` files and then commit them. (No `git add` needed).
 git commit -m "<commit message>" -m ...
+git commit --amend ==> Replaces the latest commit by creating a new commit.
 
 git status ==> shows the status of the repository.
 
