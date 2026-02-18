@@ -44,3 +44,9 @@ git restore --source="<commit hash>" "<file_name>" ==> Replaces the file with an
 git checkout "<file>" ==> Similar to `git restore "<file>"`
 
 git revert "<commit hash>" ==> Reverts a specified commit to the working directory. (You can use `HEAD` instead of the last commit hash).
+
+git branch ==> Displays the name of the current active branch and also the other branches.
+git branch "<branch_name>" ==> Creates a new branch.
+
+git checkout "<branch_name>" ==> Changes the active branch to the specified one.
+git checkout -b "<branch_name>" ==> Creates a new branch and automatically switches to that.
