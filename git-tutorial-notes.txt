@@ -29,6 +29,11 @@ git log ==> Shows the log of the repository.
 git log -p ==> Displays the changes (diffings) alongside the commits.
 git log -3 ==> Displays just the last 3 commits.
 
+git log --graph ==> Draw a text-based graphical representation of the commit history on the left hand side of the output.
+git log --oneline ==> the commit message is prefixed with this information on the same line.
+You can combine them together:
+git log --graph --oneline
+
 git diff ==> Displays the difference between the latest commit and current `unstaged` repository files.
 git diff --staged ==> Displays the differences between the latest commit and current `staged` repository files.
 git diff "<commit hash>" ==> Displays the differences between the specified commit and current `staged` or `unstaged` repository files.
@@ -48,7 +53,9 @@ git revert "<commit hash>" ==> Does the opposite of the actions we done in the s
 git branch ==> Displays the name of the current active branch and also the other branches.
 git branch -v ==> Displays the latest commits details alongside the names of the existing branches.
 git branch "<branch_name>" ==> Creates a new branch.
+
 git branch -d "<branch_name>" ==> To delete a branch.
+git branch -D "<branch_name>" ==> If you have some unmerged commits in the branch to force delete it use this command.
 
 git checkout "<branch_name>" ==> Changes the active branch to the specified one.
 git checkout -b "<branch_name>" ==> Creates a new branch and automatically switches to that.
