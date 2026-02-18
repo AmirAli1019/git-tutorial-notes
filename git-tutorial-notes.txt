@@ -46,6 +46,7 @@ git checkout "<file>" ==> Similar to `git restore "<file>"`
 git revert "<commit hash>" ==> Does the opposite of the actions we done in the specified commit. For example if we had created a file it deletes just the same file.
 
 git branch ==> Displays the name of the current active branch and also the other branches.
+git branch -v ==> Displays the latest commits details alongside the names of the existing branches.
 git branch "<branch_name>" ==> Creates a new branch.
 git branch -d "<branch_name>" ==> To delete a branch.
 
