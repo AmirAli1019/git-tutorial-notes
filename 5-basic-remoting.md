@@ -78,6 +78,10 @@ To merge fetched commit:
 
 => Unlike `git fetch` this command updates all branches from all remotes.
 
+`git fetch --all` updates every remote;
+
+`git remote update` updates all remotes except those you've specifically told Git to skip.
+
 `git show <remote_name> <branch>`
 
 => It asks the server: "What do you have that I don't? Without downloading any commits.
