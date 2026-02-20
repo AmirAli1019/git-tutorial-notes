@@ -57,3 +57,6 @@ git merge <remote_name>/<branch>
 
 git remote update
 => Unlike `git fetch` this command updates all branches from all remotes.
+
+git show <remote_name> <branch>
+=> It asks the server: "What do you have that I don't? Without downloading any commits.
