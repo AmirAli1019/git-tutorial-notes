@@ -86,9 +86,13 @@
 
 => Shows each commit on a single line (short hash + message).
 
+`git log --all`
+
+=> Displays the commit history of all branches, tags, and remote-tracking refs in the repository, rather than just the current branch.
+
 # Combine options
 
-`git log --graph --oneline`
+`git log --graph --oneline --all`
 
 # Differences
 
