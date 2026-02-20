@@ -45,3 +45,15 @@ git pull -u <remote_name> <branch>
 # Viewing remote branch logs
 git log <remote_name>/<branch>
 => Shows the commit history of a remote-tracking branch.
+
+# Updating remotes status
+git fetch <remote_name> <branch>
+=> Fetches new commits from the specified remote and branch but does not merge them to your local.
+
+To merge fetched commit:
+git merge <remote_name>/<branch>
+
+`git pull` does the both above actions automatically.
+
+git remote update
+=> Unlike `git fetch` this command updates all branches from all remotes.
