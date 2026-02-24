@@ -18,10 +18,6 @@ Instead of merging two branches together (which creates a "knot" in your timelin
 
 - Up-to-date: It makes it look like you started your work after everyone else finished theirs, avoiding messy conflicts later.
 
-**A word of caution:**
-
-Only rebase branches that you are working on alone. If you rebase a branch that others are using, it can scramble their history and cause a bit of a headache!
-
 ---
 
 To rebase a branch go to your feature branch and tell git to "rebase" it to the main branch:
@@ -41,3 +37,27 @@ Or if you want to abort that:
 If the remote reject pushing after rebase you should force push it:
 
 `git push --force`
+
+---
+
+Force pushing is not recommended on branches that you work on as a team, as it alters the project's history and can cause difficulties when pulling changes.
+
+However, there are several ways to address this issue after a force push:
+
+1. The "Clean History" Way (Rebase)
+
+    This is usually the preferred method if you want a linear history. It takes your local commits and "re-stacks" them on top of the new remote commits.
+
+`git pull --rebase`
+
+2. The "Standard" Way (Merge)
+
+    This creates a new "merge commit" that ties your local work and the remote work together. It’s visible in the logs that a merge happened.
+
+`git pull --no-rebase`
+
+3. The "Reset" Way (Overwrite Local)
+
+    Warning: This deletes any local changes you haven't pushed. If you don't care about your local commits and just want your folder to match GitHub exactly:
+
+`git reset --hard origin/main`
