@@ -19,6 +19,7 @@ The repository is organized into 7 comprehensive tutorials, each focusing on a s
 5. **[Basic Remoting](./5-basic-remoting.md)** - Work with remote repositories
 6. **[Git Rebase](./6-git-rebase.md)** - Rewrite commit history and maintain clean branches
 7. **[Git Squash](./7-git-squash.md)** - Combine commits for cleaner history
+8. **[gitignore](./8-gitignore.md)** - Choose which files and directories not to track.
 
 ## 🎯 How to Use
 
